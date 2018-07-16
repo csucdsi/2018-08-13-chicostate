@@ -179,12 +179,12 @@ eventbrite: "48104411590"     # optional: alphanumeric key for Eventbrite regist
 
 <hr/>
 
-{% comment %} 
- SURVEYS - DO NOT EDIT SURVEY LINKS 
+{% comment %}
+ SURVEYS - DO NOT EDIT SURVEY LINKS
 {% endcomment %}
 <h2 id="surveys">Surveys</h2>
 
-{% if page.carpentry == "swc" %} 
+{% if page.carpentry == "swc" %}
 <p>Please be sure to complete these surveys before and after the workshop.</p>
 <p><a href="{{ site.swc_pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
 <p><a href="{{ site.swc_post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
@@ -260,6 +260,9 @@ eventbrite: "48104411590"     # optional: alphanumeric key for Eventbrite regist
 {% elsif page.carpentry == "lc" %}
   {% include lc/syllabus.html %}
 {% endif %}
+
+<br>
+<br>
 
 <hr/>
 
@@ -386,6 +389,7 @@ eventbrite: "48104411590"     # optional: alphanumeric key for Eventbrite regist
   </div>
 </div> {% comment %} End of 'shell' section. {% endcomment %}
 
+<!--
 <div id="git"> {% comment %} Start of 'Git' section. GitHub browser compatability
            is given at https://help.github.com/articles/supported-browsers/{% endcomment %}
   <h3>Git</h3>
@@ -441,7 +445,7 @@ eventbrite: "48104411590"     # optional: alphanumeric key for Eventbrite regist
     </div>
   </div>
 </div> {% comment %} End of 'Git' section. {% endcomment %}
-
+-->
 <div id="editor"> {% comment %} Start of 'editor' section. {% endcomment %}
   <h3>Text Editor</h3>
 
@@ -514,6 +518,7 @@ eventbrite: "48104411590"     # optional: alphanumeric key for Eventbrite regist
   </div>
 </div> {% comment %} End of 'editor' section. {% endcomment %}
 
+<!--
 <div id="python"> {% comment %} Start of 'Python' section. Remove the third paragraph if
            the workshop will teach Python using something other than
            the Jupyter notebook.
@@ -606,7 +611,7 @@ eventbrite: "48104411590"     # optional: alphanumeric key for Eventbrite regist
   </p>
 {% endcomment %}
 </div> {% comment %} End of 'Python' section. {% endcomment %}
-
+-->
 <div id="r"> {% comment %} Start of 'R' section. {% endcomment %}
   <h3>R</h3>
 
@@ -627,9 +632,9 @@ eventbrite: "48104411590"     # optional: alphanumeric key for Eventbrite regist
         from <a href="https://cran.r-project.org/index.html">CRAN</a>.
         Also, please install the
         <a href="https://www.rstudio.com/products/rstudio/download/#download">RStudio IDE</a>.
-        Note that if you have separate user and admin accounts, you should run the 
-        installers as administrator (right-click on .exe file and select "Run as 
-        administrator" instead of double-clicking). Otherwise problems may occur later, 
+        Note that if you have separate user and admin accounts, you should run the
+        installers as administrator (right-click on .exe file and select "Run as
+        administrator" instead of double-clicking). Otherwise problems may occur later,
         for example when installing R packages.
       </p>
     </div>
@@ -657,7 +662,7 @@ eventbrite: "48104411590"     # optional: alphanumeric key for Eventbrite regist
     </div>
   </div>
 </div> {% comment %} End of 'R' section. {% endcomment %}
-
+<!--
 <div id="sql"> {% comment %} Start of 'SQLite' section. {% endcomment %}
   <h3>SQLite</h3>
 
@@ -703,7 +708,8 @@ eventbrite: "48104411590"     # optional: alphanumeric key for Eventbrite regist
     <a href="https://github.com/ContinuumIO/anaconda-issues/issues/307">without support to <code>readline</code></a>.
     Instructors will provide a workaround for it if needed.</strong></p>
 </div> {% comment %} End of 'SQLite' section. {% endcomment %}
-
+-->
+<!--
 <div id="openrefine"> {% comment %} Start of 'OpenRefine' section. {% endcomment %}
   <h3>OpenRefine</h3>
   <p>
@@ -750,7 +756,8 @@ eventbrite: "48104411590"     # optional: alphanumeric key for Eventbrite regist
     </div>
   </div>
 </div> {% comment %} End of 'OpenRefine' section. {% endcomment %}
-
+-->
+<!--
 {% comment %}
 <div id="vm">
   <h3>Virtual Machine</h3>
@@ -776,3 +783,4 @@ eventbrite: "48104411590"     # optional: alphanumeric key for Eventbrite regist
   </ol>
 </div>
 {% endcomment %}
+-->
