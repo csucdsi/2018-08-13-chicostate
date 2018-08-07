@@ -11,7 +11,7 @@ humantime: "9:00 am - 4:30 pm"    # human-readable times for the workshop (e.g.,
 startdate: 2018-08-13      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2018-08-14        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Robin Donatello", "Reid Otsuji"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["TBD"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+helper: ["Grant Esparza", "Eisley Adoremos"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["datascience@csuchico.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes:             # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
 eventbrite: "48104411590"     # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
@@ -180,20 +180,19 @@ eventbrite: "48104411590"     # optional: alphanumeric key for Eventbrite regist
 <hr/>
 
 {% comment %}
- SURVEYS - DO NOT EDIT SURVEY LINKS
+  SURVEYS - DO NOT EDIT SURVEY LINKS 
 {% endcomment %}
 <h2 id="surveys">Surveys</h2>
-
-{% if page.carpentry == "swc" %}
 <p>Please be sure to complete these surveys before and after the workshop.</p>
+{% if site.carpentry == "swc" %} 
 <p><a href="{{ site.swc_pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
 <p><a href="{{ site.swc_post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
-{% elsif page.carpentry == "dc" %}
-  <p>Please be sure to complete these surveys before and after the workshop.</p>
+{% elsif site.carpentry == "dc" %}
 <p><a href="{{ site.dc_pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
 <p><a href="{{ site.dc_post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
-{% elsif page.carpentry == "lc" %}
-<p>Ask your instructor about pre- and post-workshop Survey details.</p>
+{% elsif site.carpentry == "lc" %}
+<p><a href="{{ site.lc_pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
+<p><a href="{{ site.lc_post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
 {% endif %}
 
 <hr/>
