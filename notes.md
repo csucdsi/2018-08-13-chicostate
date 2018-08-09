@@ -1,3 +1,10 @@
+# Materials
+* whiteboard markers (have)
+* sticky notes (purchase/find)
+* roster (print)
+* nametags (purchase)
+* guest wifi password (call ITSS morning of)
+
 # Day 1
 
 ## Data Organization in Spreadsheets (RO)
@@ -12,10 +19,19 @@
 * Download gapminder data  [Link](https://raw.githubusercontent.com/resbaz/r-novice-gapminder-files/master/data/gapminder-FiveYearData.csv)
 * Intro to rstudio
 * Intro to basic R functions (math, comparisons, variable assignments, simple vectors, manage environment, installing packages, creating new project)
-#### 03 Seeking Help
-#### 04 Data Structures
-#### 05 Exploring Data Frames
+#### [03 Seeking Help](http://swcarpentry.github.io/swc-releases/2016.06/r-novice-gapminder/03-seeking-help/) (10+10 min)
+* explain each piece of a help file (read through an easy one, and a complex one)
+* Ask for topic to explore using CRAN Task Views
+        - If not chosen, show "statistical genetics" and explain what Bioconductor is
+* Challenge #2 & #3
+#### [04 Data Structures](http://swcarpentry.github.io/swc-releases/2016.06/r-novice-gapminder/04-data-structures-part1/) (40+15 min)
+* provide cats data in hack md for copy/paste
+* write up (and draw) each data type on the whiteboard
+* file-> new file -> text file. Save as `data/feline-data.csv`
+* Challenge 1:4, 7
+#### [05 Exploring Data Frames](http://swcarpentry.github.io/swc-releases/2016.06/r-novice-gapminder/05-data-structures-part2/) (20+10 min)
 * gapminder forward. No cats
+* read in using read.csv and provide the file, AND provide the url directly.
 #### 09 Vectorization
 #### 10 Functions Explained
 #### 15 Producing Reports with knitr
