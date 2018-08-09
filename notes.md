@@ -4,9 +4,14 @@
 
 
 
+
 ## Intro to R and Markdown (RAD)
 
-#### 01 Intro to R and R Studio
+#### [01 Intro to R and R Studio(RO)](https://u2ng.github.io/swc-r-notes/01-intro-r-rstudio.html)
+* R/Rstudio setup
+* Download gapminder data  [Link](https://raw.githubusercontent.com/resbaz/r-novice-gapminder-files/master/data/gapminder-FiveYearData.csv)
+* Intro to rstudio
+* Intro to basic R functions (math, comparisons, variable assignments, simple vectors, manage environment, installing packages, creating new project)
 #### 03 Seeking Help
 #### 04 Data Structures
 #### 05 Exploring Data Frames
@@ -16,7 +21,7 @@
 #### 15 Producing Reports with knitr
 * walk through basic rmarkdown html lesson
 * demo/show others: pdf, slides, homework, website
-* go back, hide code. 
+* go back, hide code.
 
 ----
 
@@ -36,6 +41,15 @@
 
 ## Projects and Version Control in R (RO)
 Goal: learn terminology (push/pull/repo/clone/commit), and setup a repo, cloned to computer using R projects
+[lesson notes link](https://github.com/U2NG/2018-git-notes)
+* Overview (ppt slides)
+* git config
+* git init
+* git status, git add, git commit
+* git push (remotes 'master' in git)
+
+[RStudio Git Supplement](https://swcarpentry.github.io/git-novice/14-supplemental-rstudio/index.html)
+* setup Git in RStudio
 
 ## Creating websites with R and Markdown (RAD)
 * provide minimum necessary files
