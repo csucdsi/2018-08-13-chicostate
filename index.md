@@ -363,6 +363,7 @@ eventbrite: "48104411590"     # optional: alphanumeric key for Eventbrite regist
       </ol>
       <p>This will provide you with both Git and Bash in the Git Bash program.</p>
     </div>
+
     <div class="col-md-4">
       <h4 id="shell-macosx">macOS</h4>
       <p>
@@ -388,7 +389,7 @@ eventbrite: "48104411590"     # optional: alphanumeric key for Eventbrite regist
   </div>
 </div> {% comment %} End of 'shell' section. {% endcomment %}
 
-<!--
+
 <div id="git"> {% comment %} Start of 'Git' section. GitHub browser compatability
            is given at https://help.github.com/articles/supported-browsers/{% endcomment %}
   <h3>Git</h3>
@@ -444,7 +445,9 @@ eventbrite: "48104411590"     # optional: alphanumeric key for Eventbrite regist
     </div>
   </div>
 </div> {% comment %} End of 'Git' section. {% endcomment %}
--->
+
+
+
 <div id="editor"> {% comment %} Start of 'editor' section. {% endcomment %}
   <h3>Text Editor</h3>
 
@@ -465,7 +468,7 @@ eventbrite: "48104411590"     # optional: alphanumeric key for Eventbrite regist
       <p>
         nano is a basic editor and the default that instructors use in the workshop.
         To install it,
-        download the <a href="{{site.swc_installer}}">
+        download the <a href="{{site.swc_github}}/windows-installer/releases/download/v0.3/SWCarpentryInstaller.exe">
           {% if page.carpentry == "swc" %}
           Software Carpentry
           {% elsif page.carpentry == "dc" %}
