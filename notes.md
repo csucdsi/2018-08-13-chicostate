@@ -5,10 +5,40 @@
 * nametags (purchase)
 * guest wifi password (call ITSS morning of)
 
+
+
 # Day 1
 
-## Data Organization in Spreadsheets (RO)
+## Workshop Introduction
+* Instructor/helper introductions
+* SWC code of conduct
+* Sticky note use explanation
+* Schedule
+* Peer learning environment
 
+
+## Data Organization in Spreadsheets (RO)
+**link to lesson materials**
+[https://github.com/U2NG/2018-dc-data-org-notes/blob/master/index.md](https://github.com/U2NG/2018-dc-data-org-notes/blob/master/index.md)
+* **Introduction**    
+Discussion about using spreadsheets (for what?) and things that were frustrating or sad?    
+* Types of spreadsheet programs
+* Problems with Spreadsheets
+* Using spreadsheets for data entry and cleaning
+* **01-Formatting tables**    
+Exercise 1 - reformatting data and identifying problems or common mistakes
+* **03-Dates as data**    
+Exercise 2 - working with date formatting    
+Exercise 3 - working with time formats    
+Exercise 4 - saving dates as CSV format Problems
+* **04-quality control**    
+Show data validation GUI function walkthrough   
+Exercise 5 - Sorting columns    
+Exercise 6 - conditional formatting    
+* **05-Exporting**    
+Why xlsx is not a good idea and CSV and TSV are recommended    
+Save as CSV walkthrough    
+Mention R packages that can read xls files e.g. readxl, XLconnect, xlsx etc.   
 
 
 
