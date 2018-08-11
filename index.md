@@ -13,7 +13,7 @@ enddate: 2018-08-14        # machine-readable end date for the workshop in YYYY-
 instructor: ["Robin Donatello (CSU Chico)", "Reid Otsuji (UC San Diego Library)"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 helper: ["Grant Esparza", "Eisley Adoremos", "Jerry Tucay"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["datascience@csuchico.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
-collaborative_notes: https://hackmd.io/sfN_8XIlQxWQn2UFRZ0kXA   # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
+collaborative_notes: ["https://hackmd.io/sfN_8XIlQxWQn2UFRZ0kXA"]  # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
 eventbrite: "48104411590"     # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
@@ -92,8 +92,7 @@ eventbrite: "48104411590"     # optional: alphanumeric key for Eventbrite regist
   <a href="//www.openstreetmap.org/?mlat={{page.latlng | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
   or
   <a href="//maps.google.com/maps?q={{page.latlng}}">Google Maps</a>. Once you enter the library, go up to the second floor. If coming from the elevators, take a left. If coming up the stairs, go straight ahead.  Signs will be posted. 
-A map containing parking locations can be found [here](https://drive.google.com/open?id=1qV1Mtz4ktoO_4S7OnaBsUn5xM0-JF3XL&usp=sharing)
-
+A map containing parking locations can be found <a href ="https://drive.google.com/open?id=1qV1Mtz4ktoO_4S7OnaBsUn5xM0-JF3XL&usp=sharing">here</a>.
 </p>
 {% endif %}
 
