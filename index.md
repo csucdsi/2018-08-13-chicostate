@@ -91,7 +91,9 @@ eventbrite: "48104411590"     # optional: alphanumeric key for Eventbrite regist
   Get directions with
   <a href="//www.openstreetmap.org/?mlat={{page.latlng | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
   or
-  <a href="//maps.google.com/maps?q={{page.latlng}}">Google Maps</a>.
+  <a href="//maps.google.com/maps?q={{page.latlng}}">Google Maps</a>. Once you enter the library, go up to the second floor. If coming from the elevators, take a left. If coming up the stairs, go straight ahead.  Signs will be posted. 
+A map containing parking locations can be found [here](https://drive.google.com/open?id=1qV1Mtz4ktoO_4S7OnaBsUn5xM0-JF3XL&usp=sharing)
+
 </p>
 {% endif %}
 
