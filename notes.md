@@ -1,8 +1,9 @@
 # Materials
 * whiteboard markers (have)
-* sticky notes (purchase/find)
+* sharpie (have)
+* sticky notes (have)
 * roster (print)
-* nametags (purchase)
+* nametags (print)
 * guest wifi password (call ITSS morning of)
 
 
@@ -15,6 +16,8 @@
 * Sticky note use explanation
 * Schedule
 * Peer learning environment
+        - Hack MD (have our collaborative document open at all times. If they want to make an account they can have a second one open to write notes in)
+        - Full notes will be available after the workshop(?)
 
 
 ## Data Organization in Spreadsheets (RO)
@@ -44,30 +47,37 @@ Mention R packages that can read xls files e.g. readxl, XLconnect, xlsx etc.
 
 ## Intro to R and Markdown (RAD)
 
-#### [01 Intro to R and R Studio(RO)](https://u2ng.github.io/swc-r-notes/01-intro-r-rstudio.html)
+#### [01 Intro to R and R Studio(RO)](https://u2ng.github.io/swc-r-notes/01-intro-r-rstudio.html) (45+10)
 * R/Rstudio setup
 * Download gapminder data  [Link](https://raw.githubusercontent.com/resbaz/r-novice-gapminder-files/master/data/gapminder-FiveYearData.csv)
 * Intro to rstudio
 * Intro to basic R functions (math, comparisons, variable assignments, simple vectors, manage environment, installing packages, creating new project)
+
+#### [15 Producing Reports with knitr](http://swcarpentry.github.io/swc-releases/2016.06/r-novice-gapminder/15-knitr-markdown/) (60+15 min)
+* walk through basic rmarkdown html lesson
+* demo/show others: pdf, slides, homework, website
+* go back, hide code.
+
+
 #### [03 Seeking Help](http://swcarpentry.github.io/swc-releases/2016.06/r-novice-gapminder/03-seeking-help/) (10+10 min)
+* Just go through swcarpentry lesson on 2nd screen.
 * explain each piece of a help file (read through an easy one, and a complex one)
 * Ask for topic to explore using CRAN Task Views
         - If not chosen, show "statistical genetics" and explain what Bioconductor is
-* Challenge #2 & #3
+* Put "other ports of call" links into HackMD
+* Challenge #2 & #3 (copy to Hack MD) **(10 min)**
+
 #### [04 Data Structures](http://swcarpentry.github.io/swc-releases/2016.06/r-novice-gapminder/04-data-structures-part1/) (40+15 min)
 * provide cats data in hack md for copy/paste
 * write up (and draw) each data type on the whiteboard
 * file-> new file -> text file. Save as `data/feline-data.csv`
-* Challenge 1:4, 7
+* Challenge 1:4, 7(copy to Hack MD) **(15 min)**
+
 #### [05 Exploring Data Frames](http://swcarpentry.github.io/swc-releases/2016.06/r-novice-gapminder/05-data-structures-part2/) (20+10 min)
 * gapminder forward. No cats
 * read in using read.csv and provide the file, AND provide the url directly.
 #### 09 Vectorization
 #### 10 Functions Explained
-#### 15 Producing Reports with knitr
-* walk through basic rmarkdown html lesson
-* demo/show others: pdf, slides, homework, website
-* go back, hide code.
 
 ----
 
@@ -97,12 +107,75 @@ Goal: learn terminology (push/pull/repo/clone/commit), and setup a repo, cloned 
 [RStudio Git Supplement](https://swcarpentry.github.io/git-novice/14-supplemental-rstudio/index.html)
 * setup Git in RStudio
 
-## Creating websites with R and Markdown (RAD)
-* provide minimum necessary files
-* build locally, change/edit, rebuild, commit & push
-* turn on gh-pages - see live site
+## Creating websites with R Markdown and GitHub (RAD)
 
-* options: master vs gh-pages branch vs docs folder
+1. Make new repo in github. Initalize with a readme
+2. Open R Studio
+3. Create a new project
+    - version control - git
+    - Need to provide repo url.
+4. Back to Github. Click green clone or download. Copy repo address. Paste into R Studio
+    - open in new session
+5. Start a new R text file. Copy the following code into this file. Save as `_site.yml`
+
+```
+name: "name"
+output_dir: "."
+navbar:
+title: "CLASS TITLE"
+left:
+    - text: "Schedule"
+      icon: fa-database
+      href: http://example.com
+      
+right:
+    - text: "Syllabus"
+    icon: fa-info-circle
+    href: syllabus.html
+
+output:
+    html_document:
+    theme: yeti
+        highlight: tango  
+```
+
+6. Start a new R Markdown file.
+    - Give it a title
+    - delete template text.
+    - Write "hello world"
+    - Save as `index.Rmd`
+
+7. Restart R Studio
+    - Click the `build` tab in the upper right.
+    - Click build website.
+
+You can see the preview in the viewer window, but let's make it live!
+
+8. Git tab - diff
+    - `ctrl+A` to select all.
+    - check `stage` button
+    - commit message "initial site build"
+    - commit + push
+
+9. Go back to GitHub
+    - Repo settings
+    - Github pages - source master - save
+    - Scroll back down to GH pages. Click on URL to your live site. 
+    
+10. Explain
+    - what the `_site.yml` file does
+    - how to add additional pages
+    - file structure limitations
+    - options: master vs gh-pages branch vs docs folder
     - output directory: docs (check that this works!)
-* Going further: blogdown + Hugo + netlify
-* show Bookdown as well (math 456 notes, from academic website, math 315 final projects html buttons)
+
+11. Going further
+    - blogdown + Hugo + netlify
+    - show Bookdown as well (math 456 notes, from academic website, math 315 final projects html buttons)
+
+
+
+
+
+
+
