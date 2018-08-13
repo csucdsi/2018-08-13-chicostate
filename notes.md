@@ -21,7 +21,7 @@
 
 
 ## Data Organization in Spreadsheets (RO)
-**link to lesson materials**
+**link to instructor notes**
 [https://github.com/U2NG/2018-dc-data-org-notes/blob/master/index.md](https://github.com/U2NG/2018-dc-data-org-notes/blob/master/index.md)
 * **Introduction**    
 Discussion about using spreadsheets (for what?) and things that were frustrating or sad?    
@@ -84,6 +84,24 @@ Mention R packages that can read xls files e.g. readxl, XLconnect, xlsx etc.
 # Day 2
 
 ## The Unix Shell (RO)
+**link to instructor notes**
+[https://github.com/U2NG/swc-shellnotes/blob/master/2016-09-SWC-shell-notes_complete_final.md]
+(https://github.com/U2NG/swc-shellnotes/blob/master/2016-09-SWC-shell-notes_complete_final.md)    
+
+* **Introducing the Shell**   
+* **Files and directories**    
+Challenge - absolute vs relative paths
+* **Working with files and directories (creating things)**     
+Challenge - renaming files
+* **Pipes and filters**    
+Challenge - what does ``sort -n`` do?    
+Challenge - piping commands together
+* **Shells scripts**    
+* **Loops** last?    
+Challenge - saving a file to a loop part 1   
+Challenge - aving a file to a loop part 2
+* **Finding things** (usually don't get to this lesson)
+
 
 
 ## Data Visualization and manipulation with R (RAD)
@@ -127,7 +145,7 @@ left:
     - text: "Schedule"
       icon: fa-database
       href: http://example.com
-      
+
 right:
     - text: "Syllabus"
     icon: fa-info-circle
@@ -160,8 +178,8 @@ You can see the preview in the viewer window, but let's make it live!
 9. Go back to GitHub
     - Repo settings
     - Github pages - source master - save
-    - Scroll back down to GH pages. Click on URL to your live site. 
-    
+    - Scroll back down to GH pages. Click on URL to your live site.
+
 10. Explain
     - what the `_site.yml` file does
     - how to add additional pages
@@ -172,10 +190,3 @@ You can see the preview in the viewer window, but let's make it live!
 11. Going further
     - blogdown + Hugo + netlify
     - show Bookdown as well (math 456 notes, from academic website, math 315 final projects html buttons)
-
-
-
-
-
-
-
