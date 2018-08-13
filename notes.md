@@ -1,13 +1,3 @@
-# Materials
-* whiteboard markers (have)
-* sharpie (have)
-* sticky notes (have)
-* roster (print)
-* nametags (print)
-* guest wifi password (call ITSS morning of)
-
-
-
 # Day 1
 
 ## Workshop Introduction
@@ -55,8 +45,9 @@ Mention R packages that can read xls files e.g. readxl, XLconnect, xlsx etc.
 
 #### [15 Producing Reports with knitr](http://swcarpentry.github.io/swc-releases/2016.06/r-novice-gapminder/15-knitr-markdown/) (60+15 min)
 * walk through basic rmarkdown html lesson
-* demo/show others: pdf, slides, homework, website
-* go back, hide code.
+* connect markdown script with HackMD
+* demo/show others: knit to PDF, _google "rmarkdown gallery"_  website, homework, final chem report
+* go back, hide code. eval=false. control size of graphics.
 
 
 #### [03 Seeking Help](http://swcarpentry.github.io/swc-releases/2016.06/r-novice-gapminder/03-seeking-help/) (10+10 min)
@@ -76,8 +67,17 @@ Mention R packages that can read xls files e.g. readxl, XLconnect, xlsx etc.
 #### [05 Exploring Data Frames](http://swcarpentry.github.io/swc-releases/2016.06/r-novice-gapminder/05-data-structures-part2/) (20+10 min)
 * gapminder forward. No cats
 * read in using read.csv and provide the file, AND provide the url directly.
-#### 09 Vectorization
+
+#### [09 Vectorization](http://swcarpentry.github.io/swc-releases/2016.06/r-novice-gapminder/09-vectorization/) (10+15)
+* element wise opearations
+* challenge #1
+* comparison, logical, functions (compare log to mean)
+
 #### 10 Functions Explained
+* what's a function: https://norcalbiostat.github.io/MATH130/04_functions_recode.html
+* ask them what to put to remove NA's from data prior to mean
+* defining user written functions
+* challenge #1 depending on audience interest & time
 
 ----
 
