@@ -73,7 +73,7 @@ Mention R packages that can read xls files e.g. readxl, XLconnect, xlsx etc.
 * challenge #1
 * comparison, logical, functions (compare log to mean)
 
-#### 10 Functions Explained
+#### [10 Functions Explained](http://swcarpentry.github.io/swc-releases/2016.06/r-novice-gapminder/10-functions/) (15? min)
 * what's a function: https://norcalbiostat.github.io/MATH130/04_functions_recode.html
 * ask them what to put to remove NA's from data prior to mean
 * defining user written functions
