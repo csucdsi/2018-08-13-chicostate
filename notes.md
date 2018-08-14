@@ -106,6 +106,7 @@ Challenge - aving a file to a loop part 2
 
 ## Data Visualization and manipulation with R (RAD)
 Setup: Make a `data` folder , and `code` in your workshop folder. Put the gapminder data in `data`. 
+* Divergence to functions. Show SWC function code. Emphasize/point that this is power of R is rolling your own functions. 
 
 #### [08 Creating Publication-Quality Graphics with ggplot2](http://swcarpentry.github.io/swc-releases/2016.06/r-novice-gapminder/08-plot-ggplot2/)
 * Read objectives
@@ -114,6 +115,7 @@ Setup: Make a `data` folder , and `code` in your workshop folder. Put the gapmin
         - Delete template material, keep header and first code chunk
         - Save this code file **into your code folder**
         - read in gapminder data into first code chunk. Start by copying what you did yesterday, but you have to modify the path. "data/gapminder.csv"
+        - Show `ls` and `rm` works in R also. 
 * Copy to Hack: `ggplot(data = gapminder, aes(x = gdpPercap, y = lifeExp)) + geom_point()`
         - copy this to your RMD file, in a new code chunk. 
         - what was the problem? 
@@ -130,19 +132,42 @@ Setup: Make a `data` folder , and `code` in your workshop folder. Put the gapmin
     - countries are grouped within continents right? so let's add a `color=continent` aestetic.
     - aestetics inside the main ggplot function apply to all layers. -- move color aestetic to lines only
     - layers are applied in order: swap the ordering of the points and lines. 
+  
+**Statistical Plots**
+Copy to Hack: `ggplot(data = gapminder, aes(x = gdpPercap, y = lifeExp, color=continent)) + geom_point()`
+  - add layer `scale_x_log10()`
+  - set alpha in points _helper please add these layers to the above plot as we cover them_
+  - add lm smoother
+  - add another smoothing layer, no method, color=red (purpose, assess linearity)
+  - add shape by continent
+  - **challenge** Change the size of the points so that they are proportional to the country `pop`. 
+     Hint: Use `aes()` inside `geom_point()`
+
+
+ Guidelines
+ * start small! Add one layer at a time.
+ * easy to make overly complicated and hard to read graphs. 
+ 
+**Paneling / faceting**
+Copy to Hack
+```{r}
+starts.with <- substr(gapminder$country, start = 1, stop = 1)
+az.countries <- gapminder[starts.with %in% c("A", "Z"), ]
+ggplot(data = az.countries, aes(x = year, y = lifeExp, color=continent)) +
+  geom_line() + facet_wrap( ~ country)`
+```
+
+Too many other things to show, explain. 
+ 
    
-Help resources
+**Help resources**
 * cookbook for R - graphics section
 * R Studio has add-ins https://github.com/calligross/ggthemeassist 
-* Intro to R "full data viz tutorial"
+* Intro to R "full data viz tutorial": https://norcalbiostat.github.io/MATH130/full_data_viz_tutorial.html 
+* #ggplot2 and #rstats hashtag on twitter
 
-Guidelines
- * start small! Add one layer at a time.
  
-    
         
-
-
 
 #### 13 Dataframe Manipulation with dplyr
 
