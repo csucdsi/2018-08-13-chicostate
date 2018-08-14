@@ -105,8 +105,45 @@ Challenge - aving a file to a loop part 2
 
 
 ## Data Visualization and manipulation with R (RAD)
+Setup: Make a `data` folder , and `code` in your workshop folder. Put the gapminder data in `data`. 
 
-#### 08 Creating Publication-Quality Graphics with ggplot2
+#### [08 Creating Publication-Quality Graphics with ggplot2](http://swcarpentry.github.io/swc-releases/2016.06/r-novice-gapminder/08-plot-ggplot2/)
+* Read objectives
+* State 3 main plotting systems (base, lattice, ggplot)
+* Open new Rmarkdown file - give it a nice title.
+        - Delete template material, keep header and first code chunk
+        - Save this code file **into your code folder**
+        - read in gapminder data into first code chunk. Start by copying what you did yesterday, but you have to modify the path. "data/gapminder.csv"
+* Copy to Hack: `ggplot(data = gapminder, aes(x = gdpPercap, y = lifeExp)) + geom_point()`
+        - copy this to your RMD file, in a new code chunk. 
+        - what was the problem? 
+* Load the ggplot2 library by clicking the button. We're doing it this way on purpose for now. 
+* Run this code chunk, make the picture, and explain the syntax.
+* Knit. Why didn't it work?
+        - fix adding libary to code file. 
+        - show how to hide messages (customize r code chunks)
+* Challenge 1 & 2 - copy question and code to Hack MD
+* Layers 
+    - To demonstrate how the layers work, let's look at the relationship between the calendar year on the x axis and life expectency on the y. Send to Hack `ggplot(data = _____, aes(x=____, y=____)) + geom_point()` -- fill in the blanks
+    - now add lines - not quite what we wanted right? 
+    - connect the dots within country by adding `by=country` to the aestetic
+    - countries are grouped within continents right? so let's add a `color=continent` aestetic.
+    - aestetics inside the main ggplot function apply to all layers. -- move color aestetic to lines only
+    - layers are applied in order: swap the ordering of the points and lines. 
+   
+Help resources
+* cookbook for R - graphics section
+* R Studio has add-ins https://github.com/calligross/ggthemeassist 
+* Intro to R "full data viz tutorial"
+
+Guidelines
+ * start small! Add one layer at a time.
+ 
+    
+        
+
+
+
 #### 13 Dataframe Manipulation with dplyr
 
 ----
