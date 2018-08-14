@@ -169,7 +169,25 @@ Too many other things to show, explain.
  
         
 
-#### 13 Dataframe Manipulation with dplyr
+#### [13 Dataframe Manipulation with dplyr](http://swcarpentry.github.io/swc-releases/2016.06/r-novice-gapminder/13-dplyr/)
+
+* Say we wanted the average gdp per capita. We could start here: mean(gapminder$gdpPercap)
+* But what if we want this average for each continent? We could subset the data using a logical statement and calculate the mean only on that subset `mean(gapminder$gdpPercap[gapminder$continent == "Africa"])`
+  - we'd have to copy/paste for each continent
+* PIA. Functions in the `dplyr` make this much easier. 
+* Introduce concepts of verbs -- we're only going to cover 5. 
+Directly go through notes!!! [RAD FOLLOW THIS]
+
+_Helpers_ -- as we talk about select/filter etc, copy image url into hack so they see visuals. Like below. 
+![](http://swcarpentry.github.io/swc-releases/2016.06/r-novice-gapminder/fig/13-dplyr-fig1.png) 
+
+**Challenge 1 & 2** -- copy to Hack 
+
+**New challenge 3** - Take the data set you just created `gdp_pop_bycontinents_byyear`, and create a line plot (scatterplot where the points are connected with lines) to look at the how the average population (`mean_pop`) change across years, for each continent. Use either `color` or `shape` on the continents to get a legend to appear. 
+
+**Advanced challenge (new)**
+Using pipes, filter `gdp_pop_bycontinents_byyear` so to only include records for continents with average population lower than 50 million. (`mean_pop < 5*10^7`). Instead of saving this as a new data set and then calling `ggplot()` on that new data set, pipe the `ggplot()` function directly after the `filter` statement. Be sure to remove the first argument to ggplot (the data set name), since that's the purpose of the piping!
+
 
 ----
 
